@@ -5,5 +5,10 @@
   1. To Become a Web Developer
   2. To Love What I do
   3. Network
+
+## Tech Used for About Me:
+  -HTML
+  -CSS
+  
 ## My Spirit Animal:
 ![SpiritAnimal](http://ngm.nationalgeographic.com/2013/04/manatees/img/01-florida-manatee-670.jpg)

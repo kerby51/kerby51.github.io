@@ -1,9 +1,91 @@
 body {
-  background-color: #88ff80;
+ background-image: url("Images/Masada2.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  margin: 0px;
+  font-family: Helvetica;
+}
+
+header {
+  background: rgba(0,0,0,0.35);
 }
 
 h1 {
-  font-size: 40px;
-  text-align: center;
-  font-family: helvetica;
+  font-size: 80px;
+  font-family: 'Montez', sans-serif;;
 }
+h3 {
+  font-size: 20px;
+  font-family: 'Libre Franklin', sans-serif;;
+}
+
+nav {
+  margin-top: -15px;
+  /*float: right;*/
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  /*width: 100%;*/
+  /*margin: 0 0 0 0;*/
+  /*overflow: hidden;*/
+  background: rgba(0,0,0,0.35);
+  list-style-type: none;
+  text-align: center;
+}
+
+/*.navbar {
+  list-style-type: none;
+  text-align: center;
+}*/
+
+li {
+  display: inline;
+  padding: 0px 20px 0px 20px;
+  /*width: 10%;
+  /*float: right;*/
+
+}
+
+a:link{
+   color:white;
+   text-decoration:none;
+}
+a:visited{
+   color:white;
+   text-decoration:none;
+}
+a:hover {
+   color:white;
+   text-decoration:none;
+}
+a:active {
+   color:white;
+   text-decoration:none;
+}
+
+.name {
+  margin: 300px 0px 100px 20px;
+  color: white;
+  text-align: center;
+  width: 50%;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+footer ul {
+  margin-bottom: 0px;
+  float: right;
+  padding-top: 80px;
+  padding-right: 20px;
+}
+
+
+
+
+
