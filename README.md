@@ -7,8 +7,8 @@
   3. Network
 
 ## Tech Used (so far) for About Me:
-  *HTML5
-  *CSS
+  HTML5
+  CSS
 
 ## TO DO'S
   1. Rebuild this personal website with ReactJS
