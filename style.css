@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
  background-image: url("Images/Masada2.jpg");
  background-size: cover;
@@ -7,6 +12,7 @@ body {
   -webkit-background-size: cover;
   margin: 0px;
   font-family: Helvetica;
+ /* background-position: center center;*/
 }
 
 header {
@@ -28,44 +34,45 @@ nav {
   color: white;
   padding-top: 40px;
   padding-bottom: 20px;
-  /*width: 100%;*/
-  /*margin: 0 0 0 0;*/
-  /*overflow: hidden;*/
   background: rgba(0,0,0,0.35);
   list-style-type: none;
   text-align: center;
+  width: 100%;
 }
-
-/*.navbar {
-  list-style-type: none;
-  text-align: center;
-}*/
 
 li {
   display: inline;
   padding: 0px 20px 0px 20px;
   /*width: 10%;
   /*float: right;*/
-
 }
 
 a:link{
    color:white;
    text-decoration:none;
 }
+
 a:visited{
    color:white;
    text-decoration:none;
 }
-a:hover {
-   color:white;
-   text-decoration:none;
-}
+/*a:hover {
+   color:red;
+   text-decoration:none;*/
+/*}*/
 a:active {
    color:white;
    text-decoration:none;
 }
 
+.navlink:hover {
+  color: lightblue;
+  border-bottom: 0.5px solid white;
+}
+
+.navlink {
+  font-size: 1.1rem;
+}
 .name {
   margin: 300px 0px 100px 20px;
   color: white;
@@ -86,6 +93,145 @@ footer ul {
 }
 
 
+/*IPHONE 5*/
+@media (max-width: 360px) {
+   body {
+    background-position: center center;
+  }
+
+  nav {
+    margin-top: -20px;
+    /*float: right;*/
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: rgba(0,0,0,0.35);
+    list-style-type: none;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    padding: 4px;
+  }
+
+  .name {
+    margin: 150px 0px 50px 20px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .icons {
+    padding: 0;
+  }
+}
 
 
 
+
+/*IPHONE 6*/
+@media (max-width: 416px) and (min-width: 321px) {
+  body {
+    background-position: center center;
+  }
+
+  nav {
+    margin-top: -20px;
+    /*float: right;*/
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: rgba(0,0,0,0.35);
+    list-style-type: none;
+    text-align: center;
+  }
+
+  li {
+  display: inline-block;
+  padding: 4px;
+ }
+
+ .name {
+  margin: 200px 0px 20px 20px;
+ }
+
+ .icons {
+  margin-bottom: 50px;
+ }
+}
+
+/*IPHONE 6 PLUS*/
+@media (max-width: 737px) and (min-width: 400px) {
+  body {
+    background-position: center center;
+  }
+
+  nav {
+    margin-top: -20px;
+    /*float: right;*/
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: rgba(0,0,0,0.35);
+    list-style-type: none;
+    text-align: center;
+  }
+
+  li {
+  display: inline-block;
+  padding: 4px;
+ }
+
+ .name {
+  margin: 250px 0px 20px 20px;
+ }
+
+ .icons {
+  margin-bottom: 50px;
+ }
+}
+/*TABLET*/
+@media (max-width: 770px) and (min-width: 417px) {
+   body {
+    background-position: center center;
+  }
+
+  nav {
+    margin-top: -20px;
+    color: white;
+    background: rgba(0,0,0,0.35);
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 40px 20px 20px 20px;
+  }
+
+  h1 {
+    font-size: 110px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 4px;
+  }
+
+  .name {
+     margin: 360px 0px 120px 20px;
+  }
+
+  .icon {
+    height: 50px;
+    width: 50px;
+    padding: 8px;
+  }
+}
