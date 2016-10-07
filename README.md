@@ -6,7 +6,7 @@
   2. To Love What I do
   3. Network
 
-## Tech Used (so far) for About Me:
+## Tech Used (so far):
   HTML5,
   CSS
 
