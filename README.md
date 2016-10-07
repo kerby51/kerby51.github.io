@@ -7,7 +7,7 @@
   3. Network
 
 ## Tech Used (so far) for About Me:
-  HTML5
+  HTML5,
   CSS
 
 ## TO DO'S
