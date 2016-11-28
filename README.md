@@ -1,6 +1,6 @@
  
-
 # Katie Benefico
+
 ## My Goals:
   1. Build dynamic websites and applications for people and businesses that inspire me
   2. To Love What I do

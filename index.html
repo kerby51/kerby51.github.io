@@ -5,26 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="reset.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Libre+Franklin|Nunito|Open+Sans|Montez" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans|Libre+Franklin|Nunito|Open+Sans|Montez|Architects+Daughter|Coiny|Bungee+Hairline|Monoton|Rubik|Dancing+Script|Gloria+Hallelujah|Indie+Flower|Kaushan+Script|Open+Sans|Open+Sans+Condensed:300|Pacifico|Raleway|Roboto|Roboto+Slab|Slabo+27px|Trirong" rel="stylesheet">
   </head>
 
   <body>
+    <div class="background">
     <header>
      <nav>
        <ul class="navbar">
-         <li><a class="navlink" href="#">Home</a></li>
-         <li><a class="navlink" href="#">My Story</a></li>
-         <li><a class="navlink" href="#">Skills</a></li>
-         <li><a class="navlink" href="#">Portfolio</a></li>
+         <!-- <li><a class="navlink" href="#">Home</a></li> -->
+         <!-- <li><a class="navlink" href="#" onclick="modalAbout()">My Story</a></li> -->
+         <li><a class="navlink" href="#" onclick="modalSkills(), ani()">Skills</a></li>
+         <li><a class="navlink" href="#" onclick="modalPortfolio()">Portfolio</a></li>
+         <li><a class="navlink" href="https://github.com/kerby51">GitHub</a></li>
          <li><a class="navlink" href="mailto:kbenefico@gmail.com">Contact</a></li>
        </ul>
      </nav>
     </header>
-    <div class="name">
-      <h1>Katie Benefico</h1> <br>
-      <h3>Developer in Training // Music Lover // New Yorker</h3><br>
+    <section id="home">
+      <div class="name">
+        <h1 id="main-name">Katie Benefico</h1> <br>
+        <h3 id="main-sub">Web Developer // Music Lover // New Yorker</h3><br>
 
-    </div>
+      </div>
+    </section>
+<!--     <section id="about">
+      <div class="modals" id="modal-about">
+        <a id="close-modal" onclick="closeModalAbout()">close</a>
+        <h1 class="modal-header">MY STORY</h1>
+          <img id="headshot" src="./Images/Headshot2.png">
+          <h2 class="arrows-left" onclick="modalPortfolio(), closeModalAbout()"><</h2>
+          <h2 class="arrows-right" onclick="modalSkills(), ani(), closeModalAbout()">></h2>
+        <div id="about-me">
+          <p>Born and raised just outside of New York City, </p>
+        </div>
+      </div>
+    </section> -->
+       <section id="skills">
+      <div class="modals" id="modal-skills">
+        <a id="close-modal" onclick="closeModalSkills()">close</a>
+        <h1 class="modal-header">SKILLS</h1>
+        <h2 class="arrows-left" onclick="modalPortfolio(), closeModalSkills()"><</h2>
+        <h2 class="arrows-right" onclick="modalPortfolio(), closeModalSkills()">></h2>
+        <div id="my-skills">
+          <img id="html5" src="./Images/html.png">
+          <p id="css">CSS</p>
+          <img id="javascript" src="./Images/js.jpg">
+          <p id="es6">ES6</p>
+          <img id="reactJS" src="./Images/react.png">
+          <p id="nodeJS">node.js</p>
+          <p id="express">Express</p>
+          <img id="psql" src="./Images/psql.png">
+          <p id="ruby">Ruby</p>
+          <img id="rails" src="./Images/rails.png">
+          <p id="firebase">Firebase</p>
+          <img id="office" src="./Images/office.png">
+          <p id="acct_mgmt">Account Management</p>
+          <p id="analysis">Data Analysis</p>
+          <p id="sales">Sales</p>
+          <p id="marketing">Marketing</p>
+
+        </div>
+      </div>
+
+    </section>
+    <section id="portfolio">
+      <div class="modals" id="modal-portfolio">
+        <a id="close-modal" onclick="closeModalPortfolio()">close</a>
+        <h1 class="modal-header">PROJECTS</h1>
+        <h2 class="arrows-left" onclick="modalSkills(), ani(), closeModalPortfolio()"><</h2>
+        <h2 class="arrows-right" onclick="modalSkills(), closeModalPortfolio()">></h2>
+        <div id="my-projects">
+
+          <h2 class="live-links-h2"><a class="live-links" href="https://live-4-live.herokuapp.com/">Live4Live</a></h2>
+          <a class="project-links" href="https://github.com/kerby51/event_finder"><img id="live4live" class="screenshots" src="./Images/live4live.png"></a>
+
+          <h2 class="live-links-h2"><a class="live-links" href="https://gofundthem.herokuapp.com/">GoFundThem</a></h2>
+          <a class="project-links" href="https://github.com/kerby51/charities"><img id="gofundthem" class="screenshots" src="./Images/gofundthem.png"></a>
+
+          <h2 class="live-links-h2"><a class="live-links" href="https://kerby51.github.io/Celebrity-Match-Game">Earworm</a></h2>
+          <a class="project-links" href="https://github.com/kerby51/Celebrity-Match-Game"><img class="screenshots" src="./Images/Earworm.png"></a>
+
+          <h2 class="live-links-h2"><a class="live-links" href="#">street-VNYL</a></h2>
+          <a class="project-links" href="https://github.com/jh90/street-VNYL"><img class="screenshots" src="./Images/SV-screenshot1.png"></a>
+
+          <h2 class="live-links-h2"><a class="live-links" href="https://kerby51.github.io/Bill-Organizer">Bill Organizer</a></h2>
+          <a class="project-links" href="https://github.com/kerby51/Bill-Organizer"><img class="screenshots" src="./Images/screenshot2.png"></a>
+
+        </div>
+      </div>
+    </section>
     <footer>
       <ul class="icons">
          <li><a href="https://www.facebook.com/katie.benefico">
@@ -44,6 +114,11 @@
          </li>
       </ul>
     </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js" charset="utf-8"></script>
+    <script src="skills.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="scripts.js" type="text/javascript" charset="utf-8" async defer></script>
+
   </body>
 
 

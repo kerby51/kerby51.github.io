@@ -12,39 +12,57 @@ body {
   -webkit-background-size: cover;
   margin: 0px;
   font-family: Helvetica;
- /* background-position: center center;*/
-}
-
-header {
-  background: rgba(0,0,0,0.35);
 }
 
 h1 {
   font-size: 80px;
-  font-family: 'Montez', sans-serif;;
+  font-family: 'Montez', sans-serif;
 }
+
+h2 {
+  text-align: left;
+  font-size: 2rem;
+}
+
 h3 {
   font-size: 20px;
-  font-family: 'Libre Franklin', sans-serif;;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.name {
+  margin: 300px 0px 100px 20px;
+  color: white;
+  text-align: center;
+  width: 50%;
+  /*animation-name: dropdown;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;*/
 }
 
 nav {
   margin-top: -15px;
-  /*float: right;*/
   color: white;
   padding-top: 40px;
   padding-bottom: 20px;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.6);
   list-style-type: none;
   text-align: center;
   width: 100%;
+  font-family: 'Open Sans', sans-serif;;
 }
 
-li {
-  display: inline;
-  padding: 0px 20px 0px 20px;
-  /*width: 10%;
-  /*float: right;*/
+.navlink {
+  font-size: 1.1rem;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+
+.navlink:hover {
+  color: #19B5FE;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+-moz-transform: scale(1.3);
+  /*border-bottom: 0.5px solid white;*/
 }
 
 a:link{
@@ -65,19 +83,9 @@ a:active {
    text-decoration:none;
 }
 
-.navlink:hover {
-  color: lightblue;
-  border-bottom: 0.5px solid white;
-}
-
-.navlink {
-  font-size: 1.1rem;
-}
-.name {
-  margin: 300px 0px 100px 20px;
-  color: white;
-  text-align: center;
-  width: 50%;
+li {
+  display: inline;
+  padding: 0px 20px 0px 20px;
 }
 
 .icon {
@@ -86,11 +94,511 @@ a:active {
 }
 
 footer ul {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   float: right;
-  padding-top: 80px;
+  padding-top: 70px;
   padding-right: 20px;
 }
+
+.modals {
+  visibility: hidden;
+  z-index: 1000;
+  height: 680px;
+  width: 80%;
+  left: 10%;
+  background-color: white;
+  /*margin: 0 auto;*/
+  top: 20px;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-header {
+  font-family: 'Bungee Hairline', cursive;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#close-modal {
+  cursor: pointer;
+  float: right;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: lightgray;
+}
+
+#close-modal:hover {
+  color: red;
+}
+
+.arrows-right {
+  float: right;
+  margin-right: 5px;
+  font-weight: bold;
+  margin-top: 0px;
+  color: darkgray;
+  font-size: 1.4rem;
+}
+
+.arrows-right:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.arrows-left {
+  margin-top: 260px;
+  margin-left: 5px;
+  font-weight: bold;
+  color: darkgray;
+  font-size: 1.4rem;
+}
+
+.arrows-left:hover {
+  cursor: pointer;
+  color: red;
+}
+
+#my-skills, #my-projects {
+  border: 1.5px solid darkgray;
+  height: 610px;
+  width: 94%;
+  margin-top: -270px;
+  margin-left: 31px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#my-projects {
+  text-align: center;
+}
+
+#about-me {
+  position: absolute;
+  margin-top: -212px;
+  /*margin-bottom: 40px;*/
+  margin-left: 31px;
+  border: 1.5px solid darkgray;
+  height: 540px;
+  width: 94%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#headshot {
+  height: 124px;
+  width: 138px;
+  float: right;
+  margin-top: -53px;
+  margin-bottom: 100px;
+  margin-right: 650px;
+  z-index: 20;
+  animation-name: dropdown2;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.screenshots {
+  height: 640px;
+  width: 860px;
+  padding-top: 12px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.live-links {
+  padding-bottom: 45px;
+  /*background-color: black;*/
+  height: 30px;
+  color: magenta;
+  font-size: 2rem;
+  padding: 3px;
+}
+
+.live-links-h2 {
+  height: 30px;
+  background-color: black;
+  /*padding-bottom: 10px;*/
+}
+
+.live-links:hover {
+  color: magenta;
+}
+
+.github {
+  color: black;
+}
+
+.html5 {
+  font-family: 'Open Sans', 'Helvetica';
+  font-size: 2rem;
+  color: red;
+  height: 50px;
+  width: 50px;
+  padding-top: 5px;
+   animation-name: htmldrop;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.css {
+  font-family: 'Monoton';
+  color: cornflowerblue;
+  font-size: 1.8rem;
+  animation-name: cssdrop;
+  animation-duration: 2.1s;
+  animation-fill-mode: forwards;
+
+}
+
+.javascript {
+  font-family: 'Coiny';
+  font-size: 1.7rem;
+  color: yellow;
+  height: 37px;
+  width: 48px;
+  animation-name: javascriptdrop;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+
+.es6 {
+  font-family: 'Roboto';
+  font-size: 2rem;
+  color: magenta;
+  animation-name: es6drop;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+
+.reactJS {
+  font-family: 'Dancing Script';
+  font-size: 2.5rem;
+  color: green;
+  height: 40px;
+  width: 130px;
+  animation-name: reactdrop;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+.nodeJS {
+  font-family: 'Trirong';
+  font-size: 2rem;
+  color: black;
+  animation-name: nodedrop;
+  animation-duration: 5.7s;
+  animation-fill-mode: forwards;
+}
+
+.express {
+  font-family: 'Open Sans Condensed';
+  font-size: 2.2rem;
+  color: royalblue;
+  animation-name: expressdrop;
+  animation-duration: 6.5s;
+  animation-fill-mode: forwards;
+}
+
+.psql {
+  font-family: 'Gloria Hallelujah';
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  animation-name: psqldrop;
+  animation-duration: 7.5s;
+  animation-fill-mode: forwards;
+}
+
+.ruby {
+  font-family: 'Raleway';
+  font-size: 2rem;
+  color: purple;
+  animation-name: rubydrop;
+  animation-duration: 8.3s;
+  animation-fill-mode: forwards;
+}
+
+.rails {
+  font-family: 'Architects Daughter';
+  font-size: 2rem;
+  height: 40px;
+  width: 100px;
+  animation-name: railsdrop;
+  animation-duration: 9.2s;
+  animation-fill-mode: forwards;
+}
+
+.firebase {
+  font-family: 'Rubik';
+  font-size: 2.2rem;
+  height: 50px;
+  width: 50px;
+  animation-name: firebasedrop;
+  animation-duration: 10.3s;
+  animation-fill-mode: forwards;
+}
+
+.office {
+  font-family: 'Helvetica';
+  font-size: 1.5rem;
+  height: 40px;
+  width: 120px;
+  animation-name: officedrop;
+  animation-duration: 11.1s;
+  animation-fill-mode: forwards;
+}
+.acct_mgmt {
+  font-family: 'Helvetica';
+  font-size: 1.55rem;
+  color: royalblue;
+  animation-name: acctdrop;
+  animation-duration: 12s;
+  animation-fill-mode: forwards;
+}
+.analysis {
+  font-family: 'Indie Flower';
+  font-size: 1.8rem;
+  animation-name: analysisdrop;
+  animation-duration: 13s;
+  animation-fill-mode: forwards;
+}
+
+.sales {
+  font-family: 'Kaushan Script';
+  font-size: 2rem;
+  color: magenta;
+  animation-name: salesdrop;
+  animation-duration: 13.7s;
+  animation-fill-mode: forwards;
+}
+
+.marketing {
+  font-family: 'Rubik';
+  font-size: 1.8rem;
+  color: green;
+  animation-name: marketingdrop;
+  animation-duration: 14.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dropdown {
+  from {
+    margin-left: -40%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 4%;
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes htmldrop {
+  from {
+    margin-left: -115%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 1%;
+    opacity: 1;
+  }
+}
+
+@keyframes cssdrop {
+  from {
+    margin-left: -125%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 5%;
+    opacity: 1;
+  }
+}
+
+@keyframes javascriptdrop {
+  from {
+    margin-left: -135%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 13%;
+    opacity: 1;
+  }
+}
+
+@keyframes es6drop {
+  from {
+    margin-left: -145%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 18%;
+    opacity: 1;
+  }
+}
+
+@keyframes reactdrop {
+  from {
+    margin-left: -155%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 22%;
+    opacity: 1;
+  }
+}
+
+@keyframes nodedrop {
+  from {
+    margin-left: -165%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 28%;
+    opacity: 1;
+  }
+}
+
+@keyframes expressdrop {
+  from {
+    margin-left: -175%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 32%;
+    opacity: 1;
+  }
+}
+
+@keyframes psqldrop {
+  from {
+    margin-left: -230%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 39%;
+    opacity: 1;
+  }
+}
+
+@keyframes rubydrop {
+  from {
+    margin-left: -195%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 42%;
+    opacity: 1;
+  }
+}
+
+@keyframes railsdrop {
+  from {
+    margin-left: -205%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 47%;
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes firebasedrop {
+  from {
+    margin-left: -260%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 52%;
+    opacity: 1;
+  }
+}
+
+
+@keyframes officedrop {
+  from {
+    margin-left: -275%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 57%;
+    opacity: 1;
+  }
+}
+
+
+@keyframes acctdrop {
+  from {
+    margin-left: -290%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 60%;
+    opacity: 1;
+  }
+}
+
+
+@keyframes analysisdrop {
+  from {
+    margin-left: -305%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 69%;
+    opacity: 1;
+  }
+}
+
+@keyframes salesdrop {
+  from {
+    margin-left: -320%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 83%;
+    opacity: 1;
+  }
+}
+
+@keyframes marketingdrop {
+  from {
+    margin-left: -305%;
+    opacity: 1;
+  }
+
+  to {
+    margin-left: 86%;
+    opacity: 1;
+  }
+}
+
+
+
+
+
 
 
 /*IPHONE 5*/
