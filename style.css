@@ -1,43 +1,45 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
+#home {
  background-image: url("Images/Masada2.jpg");
  background-size: cover;
- background-attachment: fixed;
  background-repeat: no-repeat;
   -webkit-background-repeat: no-repeat;
   -webkit-background-size: cover;
-  margin: 0px;
+  width: 100%;
+  height: 103vh;
   font-family: Helvetica;
+  margin: 0;
 }
 
-h1 {
+#home h1 {
   font-size: 80px;
   font-family: 'Montez', sans-serif;
 }
 
-h2 {
+#home h2 {
   text-align: left;
   font-size: 2rem;
 }
 
-h3 {
+#home h3 {
   font-size: 20px;
   font-family: 'Libre Franklin', sans-serif;
 }
 
 .name {
-  /*margin: 300px 0px 100px 20px;*/
   margin: 23% 0% 9% 1%;
   color: white;
   text-align: center;
   width: 50%;
-  /*animation-name: dropdown;
+  position: absolute;
+  animation-name: dropdown;
   animation-duration: 2.5s;
-  animation-fill-mode: forwards;*/
+  animation-fill-mode: forwards;
 }
 
 nav {
@@ -65,26 +67,172 @@ nav {
   -moz-transform: scale(1.3);
 }
 
-a:link{
+a:link {
    color:white;
    text-decoration:none;
 }
 
-a:visited{
+a:visited {
    color:white;
    text-decoration:none;
 }
-/*a:hover {
-   color:red;
-   text-decoration:none;*/
-/*}*/
 a:active {
    color:white;
    text-decoration:none;
 }
 
+#portfolio {
+  padding-top: 2.5%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  /*box-shadow: 0px 0px 20px white;*/
+  margin: 0 auto;
+  background-size: cover;
+  border-bottom: 1px solid darkgray;
+}
+
+.section-header {
+  font-size: 4rem;
+  padding: 2%;
+  font-family: 'Raleway Dots', cursive;
+}
+
+#two-projects {
+  text-align: center;
+  width: 100%;
+}
+
+.project {
+  width: 37%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  padding: 0% 3% 4% 3%;
+}
+
+.project-title {
+  text-align: center;
+  padding-bottom: 3.2%;
+  font-size: 2.1rem;
+  font-family: 'Poiret One', cursive;
+  color: red;
+}
+
+.project-links {
+  border: 1px solid yellow;
+  border-radius: 5px;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 1.3%;
+  margin: 0 5px 0 6px;
+}
+
+.project-links:link {
+  color: white;
+}
+
+.project-links:hover {
+  color: magenta;
+  transform: scale(1.2, 1.2);
+}
+
+.row2 {
+  margin-top: 5%;
+}
+
+.screenshots {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 2%;
+  border-radius: 6px;
+  border: 1px solid darkgray;
+  box-shadow: inset -2px 0px 10px 0px #5C5858,3px 4px 5px 1px #969393;
+-webkit-box-shadow: inset -2px 0px 10px 0px #5C5858,3px 4px 5px 1px #969393;
+-moz-box-shadow: inset -2px 0px 10px 0px #5C5858,3px 4px 5px 1px #969393;
+-o-box-shadow: inset -2px 0px 10px 0px #5C5858,3px 4px 5px 1px #969393;
+}
+
+#organizer {
+  padding-top: 7px;
+}
+
+#skills {
+  width: 100%;
+  text-align: center;
+  padding-top: 18%;
+  padding-bottom: 20%;
+}
+
+#skills h1 {
+  padding-bottom: 5%;
+}
+
+.icons {
+  height: 10%;
+  width: 10%;
+}
+
+#html5 {
+  height: 6.5%;
+  width: 6.5%;
+}
+
+#css {
+  height: 4.8%;
+  width: 4.8%;
+}
+
+#javascript {
+  height: 5%;
+  width: 5%;
+}
+
+#node {
+  height: 13%;
+  width: 14%;
+}
+
+#psql {
+  height: 7%;
+  width: 7%;
+}
+
+#ruby {
+  height: 6%;
+  width: 6%;
+}
+
+#office {
+  height: 8%;
+  width: 12%;
+}
+
+#footer {
+  width: 100%;
+  border-top: 3px solid black;
+  background-color: black;
+  position: relative;
+}
+
+.social {
+  padding-bottom: 1.3%;
+  padding-top: 1.3%;
+  position: relative;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
 li {
-  display: inline;
+  display: inline-block;
   padding: 0px 20px 0px 20px;
 }
 
@@ -93,297 +241,9 @@ li {
   width: 30px;
 }
 
-footer ul {
-  margin-bottom: 0;
- /* margin-bottom: 1%;*/
-  float: right;
-  padding-top: 70px;
-  padding-right: 20px;
-}
-
-.modals {
-  visibility: hidden;
-  z-index: 1000;
-  height: 94%;
-  width: 80%;
-  left: 10%;
-  background-color: white;
-  /*margin: 0 auto;*/
-  top: 4%;
-  position: absolute;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.modal-header {
-  font-family: 'Bungee Hairline', cursive;
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-#close-modal {
-  cursor: pointer;
-  float: right;
-  margin-right: 1%;
-  margin-top: 1%;
-  color: lightgray;
-}
-
-#close-modal:hover {
-  color: red;
-}
-
-.arrows-right {
-  float: right;
-  margin-right: 5px;
-  font-weight: bold;
-  margin-top: 0px;
-  color: darkgray;
-  font-size: 1.4rem;
-}
-
-.arrows-right:hover {
-  cursor: pointer;
-  color: red;
-}
-
-.arrows-left {
-  margin-top: 260px;
-  margin-left: 5px;
-  font-weight: bold;
-  color: darkgray;
-  font-size: 1.4rem;
-}
-
-.arrows-left:hover {
-  cursor: pointer;
-  color: red;
-}
-
-#my-skills, #my-projects {
-  border: 1.5px solid darkgray;
-  height: 90%;
-  width: 94%;
-  margin-top: -270px;
-  margin-left: 31px;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-#my-projects {
-  text-align: center;
-}
-
-#about-me {
-  position: absolute;
-  margin-top: -212px;
-  /*margin-bottom: 40px;*/
-  margin-left: 31px;
-  border: 1.5px solid darkgray;
-  height: 540px;
-  width: 94%;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-#headshot {
-  height: 124px;
-  width: 138px;
-  float: right;
-  margin-top: -53px;
-  margin-bottom: 100px;
-  margin-right: 650px;
-  z-index: 20;
-  animation-name: dropdown2;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-.screenshots {
-  height: 640px;
-  width: 860px;
-  padding-top: 12px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-.live-links {
-  padding-bottom: 45px;
-  /*background-color: black;*/
-  height: 30px;
-  color: magenta;
-  font-size: 2rem;
-  padding: 3px;
-}
-
-.live-links-h2 {
-  height: 30px;
+p {
+  color: white;
   background-color: black;
-  /*padding-bottom: 10px;*/
-}
-
-.live-links:hover {
-  color: magenta;
-}
-
-.github {
-  color: black;
-}
-
-#html5 {
-  font-family: 'Open Sans', 'Helvetica';
-  font-size: 2rem;
-  color: red;
-  height: 50px;
-  width: 50px;
-  padding-top: 5px;
-  animation-name: htmldrop;
-  animation-duration: 1.2s;
-  animation-fill-mode: forwards;
-}
-
-#css {
-  font-family: 'Monoton';
-  color: cornflowerblue;
-  font-size: 1.8rem;
-  animation-name: cssdrop;
-  animation-duration: 2.1s;
-  animation-fill-mode: forwards;
-
-}
-
-#javascript {
-  font-family: 'Coiny';
-  font-size: 1.7rem;
-  color: yellow;
-  height: 37px;
-  width: 48px;
-  animation-name: javascriptdrop;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-
-
-#es6 {
-  font-family: 'Roboto';
-  font-size: 2rem;
-  color: magenta;
-  animation-name: es6drop;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-}
-
-
-#reactJS {
-  font-family: 'Dancing Script';
-  font-size: 2.5rem;
-  color: green;
-  height: 40px;
-  width: 130px;
-  animation-name: reactdrop;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
-
-#nodeJS {
-  font-family: 'Trirong';
-  font-size: 2rem;
-  color: black;
-  animation-name: nodedrop;
-  animation-duration: 5.7s;
-  animation-fill-mode: forwards;
-}
-
-#express {
-  font-family: 'Open Sans Condensed';
-  font-size: 2.2rem;
-  color: royalblue;
-  animation-name: expressdrop;
-  animation-duration: 6.5s;
-  animation-fill-mode: forwards;
-}
-
-#psql {
-  font-family: 'Gloria Hallelujah';
-  font-size: 2rem;
-  height: 50px;
-  width: 50px;
-  animation-name: psqldrop;
-  animation-duration: 7.5s;
-  animation-fill-mode: forwards;
-}
-
-#ruby {
-  font-family: 'Raleway';
-  font-size: 2rem;
-  color: purple;
-  animation-name: rubydrop;
-  animation-duration: 8.3s;
-  animation-fill-mode: forwards;
-}
-
-#rails {
-  font-family: 'Architects Daughter';
-  font-size: 2rem;
-  height: 40px;
-  width: 100px;
-  animation-name: railsdrop;
-  animation-duration: 9.2s;
-  animation-fill-mode: forwards;
-}
-
-#firebase {
-  font-family: 'Rubik';
-  font-size: 2.2rem;
-  height: 50px;
-  width: 50px;
-  animation-name: firebasedrop;
-  animation-duration: 10.3s;
-  animation-fill-mode: forwards;
-}
-
-#office {
-  font-family: 'Helvetica';
-  font-size: 1.5rem;
-  height: 40px;
-  width: 120px;
-  animation-name: officedrop;
-  animation-duration: 11.1s;
-  animation-fill-mode: forwards;
-}
-#acct_mgmt {
-  font-family: 'Helvetica';
-  font-size: 1.55rem;
-  color: royalblue;
-  animation-name: acctdrop;
-  animation-duration: 12s;
-  animation-fill-mode: forwards;
-}
-
-#analysis {
-  font-family: 'Indie Flower';
-  font-size: 1.8rem;
-  animation-name: analysisdrop;
-  animation-duration: 13s;
-  animation-fill-mode: forwards;
-}
-
-#sales {
-  font-family: 'Kaushan Script';
-  font-size: 2rem;
-  color: magenta;
-  animation-name: salesdrop;
-  animation-duration: 13.7s;
-  animation-fill-mode: forwards;
-}
-
-#marketing {
-  font-family: 'Rubik';
-  font-size: 1.8rem;
-  color: green;
-  animation-name: marketingdrop;
-  animation-duration: 14.5s;
-  animation-fill-mode: forwards;
 }
 
 @keyframes dropdown {
@@ -400,212 +260,13 @@ footer ul {
 
 
 
-@keyframes htmldrop {
-  from {
-    margin-left: -115%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 1%;
-    opacity: 1;
-  }
-}
-
-@keyframes cssdrop {
-  from {
-    margin-left: -125%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 5%;
-    opacity: 1;
-  }
-}
-
-@keyframes javascriptdrop {
-  from {
-    margin-left: -135%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 13%;
-    opacity: 1;
-  }
-}
-
-@keyframes es6drop {
-  from {
-    margin-left: -145%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 18%;
-    opacity: 1;
-  }
-}
-
-@keyframes reactdrop {
-  from {
-    margin-left: -155%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 22%;
-    opacity: 1;
-  }
-}
-
-@keyframes nodedrop {
-  from {
-    margin-left: -165%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 28%;
-    opacity: 1;
-  }
-}
-
-@keyframes expressdrop {
-  from {
-    margin-left: -175%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 32%;
-    opacity: 1;
-  }
-}
-
-@keyframes psqldrop {
-  from {
-    margin-left: -230%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 39%;
-    opacity: 1;
-  }
-}
-
-@keyframes rubydrop {
-  from {
-    margin-left: -195%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 42%;
-    opacity: 1;
-  }
-}
-
-@keyframes railsdrop {
-  from {
-    margin-left: -205%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 47%;
-    opacity: 1;
-  }
-}
-
-
-
-@keyframes firebasedrop {
-  from {
-    margin-left: -260%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 52%;
-    opacity: 1;
-  }
-}
-
-
-@keyframes officedrop {
-  from {
-    margin-left: -275%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 57%;
-    opacity: 1;
-  }
-}
-
-
-@keyframes acctdrop {
-  from {
-    margin-left: -290%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 60%;
-    opacity: 1;
-  }
-}
-
-
-@keyframes analysisdrop {
-  from {
-    margin-left: -305%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 69%;
-    opacity: 1;
-  }
-}
-
-@keyframes salesdrop {
-  from {
-    margin-left: -320%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 83%;
-    opacity: 1;
-  }
-}
-
-@keyframes marketingdrop {
-  from {
-    margin-left: -305%;
-    opacity: 1;
-  }
-
-  to {
-    margin-left: 86%;
-    opacity: 1;
-  }
-}
-
-
-
 
 
 
 
 /*IPHONE 5*/
 @media (max-width: 360px) {
-   body {
+   #home {
     background-position: center center;
   }
 
@@ -629,17 +290,26 @@ footer ul {
     margin: 150px 0px 50px 20px;
   }
 
-  h1 {
+  #home h1 {
     font-size: 70px;
   }
 
-  h3 {
+  #home h3 {
     font-size: 20px;
   }
 
-  .icons {
-    padding: 0;
+  .section-header {
+    font-size: 2rem;
   }
+
+  .icon {
+
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
 }
 
 
@@ -647,7 +317,7 @@ footer ul {
 
 /*IPHONE 6*/
 @media (max-width: 416px) and (min-width: 321px) {
-  body {
+  #home {
     background-position: center center;
   }
 
@@ -671,14 +341,29 @@ footer ul {
   margin: 200px 0px 20px 20px;
  }
 
- .icons {
-  margin-bottom: 50px;
- }
+ .section-header {
+    font-size: 2rem;
+  }
+
+  .project-title {
+    font-size: 1.6rem;
+  }
+
+  .project {
+    width: 80%;
+    padding: 4%;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin: 4%;
+  }
 }
 
 /*IPHONE 6 PLUS*/
 @media (max-width: 737px) and (min-width: 400px) {
-  body {
+  #home {
     background-position: center center;
   }
 
@@ -702,13 +387,14 @@ footer ul {
   margin: 250px 0px 20px 20px;
  }
 
- .icons {
-  margin-bottom: 50px;
- }
+  .section-header {
+    font-size: 2rem;
+  }
+
 }
 /*TABLET*/
 @media (max-width: 770px) and (min-width: 417px) {
-   body {
+  #home {
     background-position: center center;
   }
 
@@ -722,11 +408,11 @@ footer ul {
     padding: 40px 20px 20px 20px;
   }
 
-  h1 {
+  #home h1 {
     font-size: 110px;
   }
 
-  h3 {
+  #home h3 {
     font-size: 20px;
   }
 
@@ -744,10 +430,14 @@ footer ul {
     width: 50px;
     padding: 8px;
   }
+
+   .section-header {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 3000px) and (min-width: 2000px) {
-   body {
+  #home {
     background-position: center center;
   }
 
@@ -761,14 +451,25 @@ footer ul {
     padding: 20px 20px 20px 20px;
   }
 
-  h1 {
-    font-size: 150px;
+  .navlink {
+    font-size: 2.3rem;
+    padding: 2px 2px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
   }
 
-  h3 {
+  #home h1 {
+    font-size: 150px;
+    margin-top: 14%
+  }
+
+  #home h3 {
     font-size: 60px;
   }
 
+  .section-header {
+    font-size: 10rem;
+  }
   li {
     display: inline-block;
     padding: 4px;
