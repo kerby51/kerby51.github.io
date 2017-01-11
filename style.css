@@ -369,7 +369,6 @@ p {
 
   nav {
     margin-top: -20px;
-    /*float: right;*/
     color: white;
     padding-top: 40px;
     padding-bottom: 20px;
@@ -379,19 +378,19 @@ p {
   }
 
   li {
-  display: inline-block;
-  padding: 4px;
- }
+    display: inline-block;
+    padding: 4px;
+  }
 
- .name {
-  margin: 250px 0px 20px 20px;
- }
+  .name {
+    margin: 250px 0px 20px 20px;
+  }
 
   .section-header {
     font-size: 2rem;
   }
-
 }
+
 /*TABLET*/
 @media (max-width: 770px) and (min-width: 417px) {
   #home {
