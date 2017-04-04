@@ -231,7 +231,7 @@ a:active {
   text-align: center;
 }
 
-li {
+.list {
   display: inline-block;
   padding: 0px 20px 0px 20px;
 }
@@ -263,10 +263,13 @@ p {
 
 #gallery {
   text-align: center;
-  display: inline-block;
   background-color: white;
-  width: 90%;
-  margin-left: 5%;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.videos {
+  display: inline-block;
 }
 
 #proof {
@@ -279,7 +282,7 @@ p {
 }
 
 iframe {
-  padding: 0% 1% 0% 1%;
+  padding: 0% 4% 0% 4%;
   width: 320px;
   height: 240px;
   margin-top: -5%
@@ -324,7 +327,7 @@ iframe {
     text-align: center;
   }
 
-  li {
+  .list {
     display: inline-block;
     padding: 4px;
   }
@@ -375,7 +378,7 @@ iframe {
     text-align: center;
   }
 
-  li {
+  .list {
   display: inline-block;
   padding: 4px;
  }
@@ -402,6 +405,10 @@ iframe {
     height: 24px;
     margin: 4%;
   }
+
+ /* #gallery {
+    margin-left: -20%;
+  }*/
 }
 
 /*IPHONE 6 PLUS*/
@@ -476,6 +483,14 @@ iframe {
    .section-header {
     font-size: 2.5rem;
   }
+
+  #gallery {
+    text-align: center;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+}
+
 }
 
 @media (max-width: 3000px) and (min-width: 2000px) {
